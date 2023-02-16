@@ -170,6 +170,8 @@ export default {
   height: 500px;
   width: 1240px;
   overflow: hidden;
+  // 设置层级为最高, 防止被背景给屏蔽掉
+  z-index: 999;
 
   .left-panel {
     position: relative;
