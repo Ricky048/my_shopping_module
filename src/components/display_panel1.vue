@@ -5,15 +5,15 @@
       <p class="title">生鲜</p>
       <ul>
         <li v-for="item in top" :key="item">
-          <a href="javascript;">{{ item }}</a>
+          <a href="javascript:;">{{ item }}</a>
         </li>
         <li>
-          <a class="all" href="javascript;">查看全部</a>
+          <a class="all" href="javascript:;">查看全部</a>
         </li>
       </ul>
     </div>
     <div class="bottom">
-      <a href="javascript;" class="left">
+      <a href="javascript:;" class="left">
         <img src="@/assets/images/uploads/fresh_goods_cover.png" />
       </a>
       <div class="right">

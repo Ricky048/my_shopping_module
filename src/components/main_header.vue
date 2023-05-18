@@ -3,22 +3,23 @@
     <div class="top-bar">
       <ul>
         <li v-for="(item, i) in topBarRes" :key="i">
-          <a href="javascript;">{{ item }}</a>
+          <router-link to="/notFound">{{ item }}</router-link>
+          <!-- <a href=""></a> -->
         </li>
       </ul>
     </div>
     <div class="main-bar">
-      <a href="javascript;" class="logo"></a>
+      <a href="javascript:;" class="logo"></a>
       <ul>
         <li v-for="(item, i) in mainBarRes" :key="i">
-          <a href="javascript;">{{ item }}</a>
+          <a href="javascript:;">{{ item }}</a>
         </li>
       </ul>
       <div class="search">
         <i></i>
         <input type="text" placeholder="搜一搜" />
       </div>
-      <a href="javascript;" class="my-cart"></a>
+      <a href="javascript:;" class="my-cart"></a>
     </div>
   </div>
 </template>
@@ -27,11 +28,11 @@
 export default {
   data() {
     return {
-      topBarRes: ['请先登录', '免费注册', '我的订单', '会员中心', '帮助中心', '在线客服', '手机版'],
-      mainBarRes: ['首页', '生鲜', '美食', '餐厨', '电器', '居家', '洗护', '孕婴', '服装 ']
-    }
-  }
-}
+      topBarRes: ["请先登录", "免费注册", "我的订单", "会员中心", "帮助中心", "在线客服", "手机版"],
+      mainBarRes: ["首页", "生鲜", "美食", "餐厨", "电器", "居家", "洗护", "孕婴", "服装 "],
+    };
+  },
+};
 </script>
 
 <style lang="less" scoped>
@@ -73,11 +74,11 @@ export default {
         border: none;
 
         &:before {
-          content: '';
+          content: "";
           display: block;
           width: 11px;
           height: 18px;
-          background-image: url('@/assets/images/sprites.png');
+          background-image: url("@/assets/images/sprites.png");
           // 原点在左上, 按照标点走正为左上, 负为右下
           background-position: -160px -70px;
           margin-right: 8px;
@@ -100,7 +101,7 @@ export default {
       height: 70px;
       margin-left: 25px;
       margin-right: 40px;
-      background-image: url('@/assets/images/logo.png');
+      background-image: url("@/assets/images/logo.png");
       background-size: cover;
     }
 
@@ -124,11 +125,11 @@ export default {
       position: relative;
       width: 23px;
       height: 23px;
-      background-image: url('@/assets/images/sprites.png');
+      background-image: url("@/assets/images/sprites.png");
       background-position: -120px -70px;
 
       &:after {
-        content: '2';
+        content: "2";
         position: absolute;
         top: -6px;
         left: 14px;
@@ -168,7 +169,7 @@ export default {
         margin-right: 4px;
         height: 20px;
         width: 20px;
-        background-image: url('@/assets/images/sprites.png');
+        background-image: url("@/assets/images/sprites.png");
         background-position: -80px -70px;
       }
     }

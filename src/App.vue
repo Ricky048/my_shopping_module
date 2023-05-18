@@ -1,22 +1,27 @@
 <template>
-  <div class="Main">
-    <main-page></main-page>
-  </div>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
 </template>
 
-<script>
-import MainPage from './pages/MainPage.vue'
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue';
+import HelloWorld from './components/HelloWorld.vue';
+
+export default defineComponent({
   name: 'App',
   components: {
-    MainPage
+    HelloWorld
   }
-}
+});
 </script>
 
-<style>
-@import url('@/assets/css/base.css');
+<style lang="less">
 #app {
-  margin: 0 auto;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="good-display">
-    <a class="display-img" href="javascript;">
+    <a class="display-img" href="javascript:;">
       <img src="@/assets/images/uploads/fresh_goods_2.jpg" />
     </a>
     <div class="show-text">
@@ -12,9 +12,9 @@
       <span class="money">￥59</span>
     </div>
     <div class="cover">
-      <div class="similar"><a href="javascript;">找相似</a></div>
+      <div class="similar"><a href="javascript:;">找相似</a></div>
       <hr />
-      <div class="more"><a href="javascript;">查看更多商品</a></div>
+      <div class="more"><a href="javascript:;">查看更多商品</a></div>
     </div>
   </div>
 </template>
